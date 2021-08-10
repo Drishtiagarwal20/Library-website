@@ -1,0 +1,130 @@
+<!--Copied from the starter package from getbootstrap.com-->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    body {
+      background-image: url('lib1.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+  <title>Welcome to Shyam Library</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Shyam Library</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div id="message"></div>
+
+
+  <div class="container my-3">
+    <h1>Shyam Library</h1>
+    <hr>
+    <form id="libraryForm">
+      <div class="form-group row">
+        <label for="bookName" class="col-sm-2 col-form-label">
+          <h5>Name</h5>
+        </label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="bookName" placeholder="Book Name">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="Author" class="col-sm-2 col-form-label">
+          <h5>Author</h5>
+        </label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="author" placeholder="Author">
+        </div>
+      </div>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-2 pt-0">
+            <h5>Type</h5>
+          </legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="type" id="fiction" value="fiction">
+              <label class="form-check-label" for="fiction">
+                Fiction
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="type" id="programming" value="programming">
+              <label class="form-check-label" for="programming">
+                Computer Programming
+              </label>
+            </div>
+            <div class="form-check disabled">
+              <input class="form-check-input" type="radio" name="type" id="sports" value="sports">
+              <label class="form-check-label" for="sports">
+                sports
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary">Add Book</button>
+        </div>
+      </div>
+    </form>
+
+    <div id="table">
+      <h1>Your books</h1>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Author</th>
+            <th scope="col">Type</th>
+          </tr>
+        </thead>
+        <tbody id='tableBody'></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- <script src="index.js"></script> -->
+  <script src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
